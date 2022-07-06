@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "811725599785",
+    "project_id": "sns-upbond-dev",
+    "storage_bucket": "sns-upbond-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811725599785:android:ff3cc6b610eb176e081838",
+        "android_client_info": {
+          "package_name": "com.auth0.flutterdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811725599785-nqoov0agl74mhpb9j0rd1t0qqd3niser.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPqgLBXH50mWcO9ePl4lH_-jEEzQQsjek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811725599785-nqoov0agl74mhpb9j0rd1t0qqd3niser.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811725599785:android:15563484ebb0b22f081838",
+        "android_client_info": {
+          "package_name": "com.upbond.sns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811725599785-nqoov0agl74mhpb9j0rd1t0qqd3niser.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPqgLBXH50mWcO9ePl4lH_-jEEzQQsjek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811725599785-nqoov0agl74mhpb9j0rd1t0qqd3niser.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
