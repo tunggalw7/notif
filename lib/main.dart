@@ -32,7 +32,7 @@ String globalString = "";
 const AUTH0_DOMAIN = 'lzg2dndj.auth.dev.upbond.io';
 const AUTH0_CLIENT_ID = 'RJbah0KBO0rHvbILt1TBe';
 
-const AUTH0_REDIRECT_URI = 'com.auth0.flutterdemo://login-callback';
+const AUTH0_REDIRECT_URI = 'com.upbond.sns://login-callback';
 const AUTH0_ISSUER = 'https://$AUTH0_DOMAIN';
 
 
@@ -454,34 +454,34 @@ class _MyAppState extends State<MyApp>  {
       }
       print('FCM on message opened app 2 tunggal: ${message.data}');
       print('FCM on message 2 tunggal: ${message}');
-      _navigatorKey.currentState!.push(
-        MaterialPageRoute(
-          builder: (context) => const HomePage(),
-        ),
-      );
-      // String? routeScreen = message.data['screen'];
-      // if (routeScreen != null) {
-      //   print('FCM on masokkk x 1');
-      //   if (routeScreen == 'detail_product') {
-      //     print('FCM on masokkk x true');
-      //     _navigatorKey.currentState!.push(
-      //       MaterialPageRoute(
-      //         // builder: (context) => DetailProdukPage(
-      //         //   name: message.data['name'] ?? '-',
-      //         // ),
-      //         builder: (context) => HomePage(),
-      //       ),
-      //     );
-      //   } else {
-      //     print('FCM on masokkk x 2');
-      //     print('FCM on masokkk x 2 false');
-      //     _navigatorKey.currentState!.push(
-      //       MaterialPageRoute(
-      //         builder: (context) => const HomePage(),
-      //       ),
-      //     );
-      //   }
-      // }
+      // _navigatorKey.currentState!.push(
+      //   MaterialPageRoute(
+      //     builder: (context) => const HomePage(),
+      //   ),
+      // );
+      String? routeScreen = message.data['screen'];
+      if (routeScreen != null) {
+        print('FCM on masokkk x 1');
+        if (routeScreen == 'detail_product') {
+          print('FCM on masokkk x true');
+          _navigatorKey.currentState!.push(
+            MaterialPageRoute(
+              // builder: (context) => DetailProdukPage(
+              //   name: message.data['name'] ?? '-',
+              // ),
+              builder: (context) => HomePage(),
+            ),
+          );
+        } else {
+          print('FCM on masokkk x 2');
+          print('FCM on masokkk x 2 false');
+          _navigatorKey.currentState!.push(
+            MaterialPageRoute(
+              builder: (context) => const HomePage(),
+            ),
+          );
+        }
+      }
     });
 
     FirebaseMessaging.onBackgroundMessage((RemoteMessage message) async {

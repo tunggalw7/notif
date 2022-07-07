@@ -1,4 +1,4 @@
-package com.auth0.flutterdemo
+package com.upbond.sns
 
 import io.flutter.embedding.android.FlutterActivity
 

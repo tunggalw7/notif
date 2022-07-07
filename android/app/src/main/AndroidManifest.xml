@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.auth0.flutterdemo">
+    package="com.upbond.sns">
    <application
-        android:label="flutterdemo"
+        android:label="upbond"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

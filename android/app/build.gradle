@@ -44,13 +44,13 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.auth0.flutterdemo"
+        applicationId "com.upbond.sns"
         minSdkVersion 29
         targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         manifestPlaceholders = [
-                'appAuthRedirectScheme': 'com.auth0.flutterdemo'
+                'appAuthRedirectScheme': 'com.upbond.sns'
         ]
     }
 
